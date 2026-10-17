@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Encuentra nuestros productos, redes sociales y formas de contacto en un solo lugar.">
+  <title>Tu negocio | Enlaces y tienda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="#"><span class="brand-icon">↗</span><span id="brandName">CTRL_NICA</span><span class="dot">.</span></a>
+    <nav class="top-actions">
+      <a class="nav-link" href="#productos">Tienda</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+      
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero panel">
+      <div class="hero-copy">
+        <div class="profile-avatar" id="profileAvatar" aria-label="Foto de perfil"><span>✦</span></div>
+        <span class="pill"><span class="live-dot"></span> TU ESPACIO OFICIAL</span>
+        <h1>Todo lo que buscas.<br><span>En un solo lugar.</span></h1>
+        <p id="tagline">Descubre nuestros productos, síguenos en redes y contáctanos directamente.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#productos">Ver productos <span>↗</span></a>
+          <a class="btn ghost" href="#contacto">Contactar</a>
+        </div>
+        <div class="trust-line"><span>✦</span> Atención directa · Enlaces oficiales · Compra fácil</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card card-back"></div>
+        <div class="art-card card-front"><span class="art-symbol">✳</span><span class="art-small">CTRL_NICA</span><strong>Redes y<br>Catálogo<span class="dot">.</span></strong><span class="art-bottom">ENLACES · PRODUCTOS</span></div>
+        <span class="float-chip chip-one">↗ Social</span><span class="float-chip chip-two">✦ Shop</span>
+      </div>
+    </section>
+
+    <section class="social-section" id="contacto">
+      <div class="section-title">
+        <div><p class="eyebrow">CONECTA CON NOSOTROS</p><h2>Nuestras redes<span class="dot">.</span></h2></div>
+        <span class="muted tiny">SÍGUENOS PARA NOVEDADES</span>
+      </div>
+      <div class="social-grid" id="socialGrid"></div>
+      <div class="contact-strip">
+        <div class="contact-icon">✉</div>
+        <div class="contact-copy"><strong>¿Tienes alguna pregunta?</strong><span>Escríbenos y te ayudamos.</span></div>
+        <a class="text-link" id="contactButton" href="https://wa.me/" target="_blank" rel="noopener noreferrer">Hablar con nosotros ↗</a>
+      </div>
+    </section>
+
+    <section class="products-section" id="productos">
+      <div class="section-title product-heading">
+        <div><p class="eyebrow">SELECCIÓN PARA TI</p><h2>Nuestros productos<span class="dot">.</span></h2><p class="section-subtitle">Explora el catálogo y consulta disponibilidad por WhatsApp.</p></div>
+        <span class="count-pill" id="productCount">0 productos</span>
+      </div>
+      <div class="catalog-tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar productos..." aria-label="Buscar productos"></label>
+        <div class="category-tabs" id="categoryTabs"></div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-products" id="emptyProducts" hidden><span>⌕</span><strong>No encontramos productos</strong><p>Prueba otra búsqueda o categoría.</p></div>
+    </section>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="#"><span class="brand-icon">↗</span><span id="footerBrand">CTRL_NICA</span><span class="dot">.</span></a>
+      <p>© <span id="year"></span> <span id="copyrightName">CTRL_NICA</span>. Todos los derechos reservados.</p>
+      <span class="footer-note">HECHO PARA CONECTAR <span class="dot">✦</span></span>
+    </footer>
+  </main>
+
+  <dialog class="product-dialog" id="productDialog">
+    <button class="close-btn product-close" id="closeProduct" type="button" aria-label="Cerrar">×</button>
+    <div id="productDetail"></div>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
